@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
@@ -17,14 +18,12 @@ public class SearchController {
     @Autowired
     private ClassPageService classPageService;
 
-
-
     @GetMapping("/")
-    public String index(){
+    public String main(){
         return "index";
     }
 
-    @PostMapping("/")
+    @RequestMapping("/")
     public String searchSubmit(Model model, @Param("query") String query){
         List<ClassPage> classPages = classPageService.findBySearchQuery(query);
         model.addAttribute("ClassPages", classPages);

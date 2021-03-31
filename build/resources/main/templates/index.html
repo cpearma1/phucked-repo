@@ -6,14 +6,14 @@
 </head>
 <body>
 
-<form th:action="@{/}" method="post">
+<form th:action="@{/}">
     <input th:value="${query}" type="text" id="query" name="query"/>
     <input value="submit" type="submit">
 </form>
 
 <table>
-    <div th:each="class-pages:${ClassPages}">
-        <tr><p th:text="${class-pages.className}"></p></tr>
+    <div th:each="classPages:${ClassPages}">
+        <tr><p th:text="${classPages.className}"></p></tr>
     </div>
 </table>
 

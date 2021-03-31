@@ -5,9 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Builder
@@ -16,7 +14,8 @@ import javax.persistence.Id;
 @Entity
 public class ClassPage {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "classpage_id")
     private int id;
     private String teacherFirstName;
     private String teacherLastName;

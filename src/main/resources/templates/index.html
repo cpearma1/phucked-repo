@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+   <title>FastLearning Home</title>
+</head>
+<body>
+
+<form th:action="@{/}" method="post">
+    <input th:value="${query}" type="text" id="query" name="query"/>
+    <input value="submit" type="submit">
+</form>
+
+<table>
+    <div th:each="class-pages:${ClassPages}">
+        <tr><p th:text="${class-pages.className}"></p></tr>
+    </div>
+</table>
+
+
+
+</body>
+</html>

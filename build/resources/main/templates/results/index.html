@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8" />
+    <title>FastLearning Home</title>
+</head>
+<body>
+
+<table>
+    <div th:block th:each="classPage : ${classPages}">
+        <tr><p th:text="${classPage.className}"></p></tr>
+    </div>
+</table>
+
+</body>
+</html>

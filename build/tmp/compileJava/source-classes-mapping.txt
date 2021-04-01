@@ -1,11 +1,13 @@
+com/group12/FastLeaning/model/ClassPage.java
+ com.group12.FastLeaning.model.ClassPage
+ com.group12.FastLeaning.model.ClassPage$ClassPageBuilder
 com/group12/FastLeaning/FastLeaningApplication.java
  com.group12.FastLeaning.FastLeaningApplication
 com/group12/FastLeaning/controller/HomeController.java
  com.group12.FastLeaning.controller.HomeController
 com/group12/FastLeaning/repository/ClassPageRepository.java
  com.group12.FastLeaning.repository.ClassPageRepository
-com/group12/FastLeaning/model/ClassPage.java
- com.group12.FastLeaning.model.ClassPage
- com.group12.FastLeaning.model.ClassPage$ClassPageBuilder
+com/group12/FastLeaning/controller/ResultsController.java
+ com.group12.FastLeaning.controller.ResultsController
 com/group12/FastLeaning/service/ClassPageService.java
  com.group12.FastLeaning.service.ClassPageService

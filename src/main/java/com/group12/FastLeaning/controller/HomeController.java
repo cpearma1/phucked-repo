@@ -18,28 +18,12 @@ import java.util.List;
 public class HomeController {
     Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-
     @Autowired
     private ClassPageService classPageService;
 
-    @GetMapping("/")
+    @GetMapping
     public String index(){
         return "index";
     }
-
-
-    @RequestMapping("/")
-    public String searchSubmit(Model model, @Param("query") String query){
-        List<ClassPage> classPages = classPageService.findBySearchQuery(query);
-        logger.debug("classPages List: " + Arrays.toString(classPages.toArray()));
-        logger.warn("classPages List: " + Arrays.toString(classPages.toArray()));
-        logger.error("classPages List: " + Arrays.toString(classPages.toArray()));
-        logger.trace("classPages List: " + Arrays.toString(classPages.toArray()));
-        System.out.println("classPages List: " + Arrays.toString(classPages.toArray()));
-        model.addAttribute("classPages", classPages);
-        model.addAttribute("query", query);
-        return "index";
-    }
-
 
 }

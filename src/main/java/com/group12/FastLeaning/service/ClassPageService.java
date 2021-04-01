@@ -16,7 +16,7 @@ public class ClassPageService {
     }
 
     public List<ClassPage> findBySearchQuery(String query){
-        return (List<ClassPage>)classPageRepository.findByClassNameOrTeacherFirstNameOrTeacherLastNameContaining(query, query, query);
+        return classPageRepository.findByClassNameOrTeacherFirstNameOrTeacherLastNameContaining(query, query, query);
 
     }
 

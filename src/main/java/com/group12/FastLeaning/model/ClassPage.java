@@ -1,4 +1,4 @@
-package com.group12.FastLeaning;
+package com.group12.FastLeaning.model;
  
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,10 +15,13 @@ import javax.persistence.*;
 public class ClassPage {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "classpage_id")
+    @Column(name = "id")
     private int id;
+    @Column(name= "teacher_first_name")
     private String teacherFirstName;
+    @Column(name="teacher_last_name")
     private String teacherLastName;
+    @Column(name="class_name")
     private String className;
 
 

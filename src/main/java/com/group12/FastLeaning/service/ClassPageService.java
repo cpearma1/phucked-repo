@@ -1,6 +1,6 @@
-package com.service;
+package com.group12.FastLeaning.service;
 
-import com.group12.FastLeaning.ClassPage;
+import com.group12.FastLeaning.model.ClassPage;
 import com.group12.FastLeaning.repository.ClassPageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

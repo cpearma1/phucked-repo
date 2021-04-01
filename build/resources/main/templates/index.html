@@ -10,13 +10,7 @@
     <input th:value="${query}" type="text" id="query" name="query"/>
     <input value="submit" type="submit">
 </form>
-<!--
-<table>
-    <div th:each="classPages:${ClassPages}">
-        <tr><p th:text="${classPages.className}"></p></tr>
-    </div>
-</table>
--->
+
 <table>
     <div th:block th:each="classPage : ${classPages}">
         <tr><p th:text="${classPages.className}"></p></tr>

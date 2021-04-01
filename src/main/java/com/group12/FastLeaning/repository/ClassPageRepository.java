@@ -1,7 +1,6 @@
 package com.group12.FastLeaning.repository;
 
-import com.group12.FastLeaning.ClassPage;
-import org.springframework.data.jpa.repository.Query;
+import com.group12.FastLeaning.model.ClassPage;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
